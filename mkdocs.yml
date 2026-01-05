@@ -1,5 +1,5 @@
-site_name: Intricate Engine Mkdocs
-site_url: https://intricate-dev-team.github.io/IntricateEngineDocs/
+site_name: IntricateDocs
+site_url: https://intricate-dev-team.github.io/IntricateDocs/
 theme:
   name: material
   features:
