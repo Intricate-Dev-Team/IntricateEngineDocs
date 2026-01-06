@@ -5,9 +5,14 @@ theme:
   name: material
   language: en
 
+  font:
+    text: Inter
+    code: Consolas
+
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.indexes
     - toc.integrate
     - navigation.top
     - search.suggest
@@ -22,14 +27,14 @@ theme:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
       primary: teal
-      accent: purple
+      accent: cyan
 
     - scheme: slate
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
       primary: teal
-      accent: lime
+      accent: cyan
 
 plugins:
   - social
