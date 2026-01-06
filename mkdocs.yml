@@ -10,13 +10,14 @@ theme:
     code: Consolas
 
   features:
+    - search.suggest
+    - search.highlight
+    - search.share
     - navigation.tabs
+    - navigation.top
     - navigation.sections
     - navigation.indexes
     - toc.integrate
-    - navigation.top
-    - search.suggest
-    - search.highlight
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
@@ -37,8 +38,8 @@ theme:
       accent: cyan
 
 plugins:
-  - social
   - search
+  - social
 
 extra:
   social:
