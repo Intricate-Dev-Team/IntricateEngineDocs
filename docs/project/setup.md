@@ -10,9 +10,9 @@ This document serves as a guide on how to setup Intricate after cloning.
 - Intricate uses [Premake5](https://premake.github.io/) as its build system.
 
 ## How To Setup
-- Run the setup script [Setup.py](../../Scripts/Setup.py), which will validate and or install the required versions of **Python**, **.NET** and the **Vulkan SDK**.
+- Run the setup script `Setup.py`, which will validate and or install the required versions of **Python**, **.NET** and the **Vulkan SDK**.
     - You may have to run the script multiple times and or restart your computer as prompted by the script for all the required environment variables to be properly registered.
-- Once all this is done, the script will call the [GenerateVS.py](../../Scripts/GenerateVS.py) script which then uses Premake to generate all projects files targetting **Visual Studio 2022**.
+- Once all this is done, the script will call the `GenerateVS.py` script which then uses Premake to generate all projects files targetting **Visual Studio 2022**.
 
 **Required environment variables:**
 - Python must be added to `PATH`

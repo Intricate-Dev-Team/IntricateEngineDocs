@@ -1,7 +1,10 @@
 site_name: IntricateDocs
 site_url: https://intricate-dev-team.github.io/IntricateDocs/
+
 theme:
   name: material
+  language: en
+
   features:
     - navigation.tabs
     - navigation.sections
@@ -12,18 +15,19 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-  language: en
+
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
       primary: teal
-      accent: purple 
-    - scheme: slate 
+      accent: purple
+
+    - scheme: slate
       toggle:
         icon: material/toggle-switch
-        name: Switch to light mode    
+        name: Switch to light mode
       primary: teal
       accent: lime
 
@@ -35,7 +39,7 @@ extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/Intricate-Dev-Team
-  
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -50,8 +54,8 @@ markdown_extensions:
   - pymdownx.mark
   - attr_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 # nav:
 #   - Home: index.md
@@ -67,6 +71,6 @@ markdown_extensions:
 #       - C# Style Guide: style/csharp-style.md
 #       - Naming Conventions: style/naming-conventions.md
 #   - Philosophy: philosophy.md
-# 
+
 copyright: |
-  &copy; 2026 <a href="https://github.com/Intricate-Dev-Team" target="_blank" rel="noopener">Intricate Dev Team</a>
+  &copy; 2026-present <a href="https://github.com/Intricate-Dev-Team" target="_blank" rel="noopener">Intricate Dev Team</a>
