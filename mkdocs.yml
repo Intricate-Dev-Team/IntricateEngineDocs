@@ -36,7 +36,6 @@ extra:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/Intricate-Dev-Team
   
-
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -55,4 +54,4 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 copyright: |
-  &copy; 2023 <a href="https://github.com/Intricate-Dev-Team"  target="_blank" rel="noopener">intricate dev team </a>
+  &copy; 2026 <a href="https://github.com/Intricate-Dev-Team" target="_blank" rel="noopener">Intricate Dev Team</a>
