@@ -53,5 +53,20 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
+# nav:
+#   - Home: index.md
+#   - Project:
+#       - Overview: project/index.md
+#       - Build Configurations: project/build-configurations.md
+#       - IDE Requirements: project/ide-requirements.md
+#       - Setup Guide: project/setup.md
+#       - System Requirements: project/system-requirements.md
+#   - Style:
+#       - Overview: style/index.md
+#       - C++ Style Guide: style/cpp-style.md
+#       - C# Style Guide: style/csharp-style.md
+#       - Naming Conventions: style/naming-conventions.md
+#   - Philosophy: philosophy.md
+# 
 copyright: |
   &copy; 2026 <a href="https://github.com/Intricate-Dev-Team" target="_blank" rel="noopener">Intricate Dev Team</a>
