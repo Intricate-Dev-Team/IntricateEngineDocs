@@ -2,7 +2,7 @@
 
 This section defines stylistic, structural, and formatting standards for C++ source code.
 
-!!! note "Naming Conventions"
+!!! info "Naming Conventions"
     Naming conventions are not covered in this section.  
     See [Naming Conventions](naming-conventions.md).
 
@@ -12,7 +12,7 @@ This section defines stylistic, structural, and formatting standards for C++ sou
 
 Intricate uses [.editorconfig](https://editorconfig.org/) to enforce code-styling. In **Visual Studio**, the code formatter can be run by pressing the hotkey chord `Ctrl+K, Ctrl+D` on an open file.
 
-!!! note
+!!! info
     All formatting rules denoted by a `*` are automatically applied by **.editorconfig** or **Visual Studio**.
 
 ### Indentation
@@ -22,7 +22,7 @@ Intricate uses [.editorconfig](https://editorconfig.org/) to enforce code-stylin
 - Continuation lines should be indented once with respect to the current indentation level.\*
 
 !!! tip
-    Pressing the tab key will add **4 spaces** instead of a tab character for indentation.
+    Pressing the tab key will add **4 spaces** instead of a tab character for indentation when **.editorconfig** is enabled.
 
 ### Line Length
 

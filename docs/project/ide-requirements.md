@@ -12,7 +12,7 @@ Intricate development requires **Microsoft Visual Studio 2022 or newer**. A seco
 - Vim (DOS mode)
 - Neovim (DOS mode)
 
-!!! tip
+!!! info ".EditorConfig"
     Intricate uses [.editorconfig](https://editorconfig.org/) to enforce code-styling. For any other text editors, please ensure that they support **.editorconfig** before using them. For **VS Code**, this extension should be used: [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig).
 
 ---
@@ -40,7 +40,7 @@ The following **Visual Studio** individual components are required:
     - Windows Performance Toolkit
     - Windows Universal C Runtime
 
-!!! note
+!!! tip
     Some of the individual components listed above may already be included by the selected workloads. Ensure they are all installed in the **Visual Studio Installer**.
 
 ---

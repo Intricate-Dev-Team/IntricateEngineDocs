@@ -15,7 +15,7 @@ This section outlines the conventions used for writing comments in code.
 **Rules:**
 
 - Always include a space between the comment symbol (`//`) and the start of the comment text.
-- Write comments in **imperative mood** to keep phrasing concise and action-oriented. (Example: *"Validate session token" instead of "Validating session token" or "This validates the session token."*)
+- Write comments in **imperative mood** to keep phrasing concise and action-oriented. (Example: *`"Validate session token"` instead of `"Validating session token"` or `"This validates the session token"`*.)
 
 **Metadata formatting:**
 
@@ -55,7 +55,7 @@ Avoid the following patterns:
 ```
 
 !!! note
-    This pattern may be used for documenting private/internal members as well as non-obvious code behavior inside methods.
+    This pattern may be used for documenting `private`/`internal` members as well as non-obvious code behavior inside methods.
 
 Instead, prefer tagged comments with clear, traceable meaning:
 

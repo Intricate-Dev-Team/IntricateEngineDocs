@@ -43,7 +43,8 @@ These conventions apply primarily to `C++` and `C#` - and then other languages o
 | Folders                       | PascalCase                 | `IntricateEngine/`            |
 
 !!! note
-    C++ specfic directories, Premake files, Git artifacts and other miscellaneous config files are exempt from these naming conventions. Name according to the convention required by the relevant toolchain.
+    C++ specfic directories, Premake files, Git artifacts and other miscellaneous config files are exempt from these naming conventions.  
+    Name according to the convention required by the relevant toolchain.
 
 ---
 
@@ -91,7 +92,7 @@ Boolean function and variable names should indicate a condition or state.
 ## Namespace Naming
 
 - Namespaces may be created for the subsystems that absolutely require them - which should be decided upon through team discussion.
-- All new namespaces within a project must be a sub-namespace of the project's namespace.
+- All new namespaces within a project must be a sub-namespace of the project's primary namespace.
 
 !!! example
     `IntricateEngine.Interop` is a sub-namespace of `IntricateEngine` in the project `IntricateEngine.NET`.

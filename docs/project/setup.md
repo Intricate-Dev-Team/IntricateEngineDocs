@@ -17,24 +17,24 @@ git clone --recurse-submodules https://github.com/DnA-IntRicate/IntricateEngine
 
 Intricate uses [Premake5](https://premake.github.io/) as its build system. The premake build system is configured to generate **Visual Studio** project and solution files off of **Lua** build scripts called **premake files**. These build scripts can be found littered around the repository and are most-commonly named `premake5.lua`.
 
-Example premake file:
-``` lua
-workspace "IntricateEngine"
-    configurations { "Debug", "Release" }
+!!! example "Example Premake file"
+    ``` lua
+    workspace "IntricateEngine"
+        configurations { "Debug", "Release" }
 
-project "IntricateEditor"
-    kind "ConsoleApp"
-    language "C++"
-    files { "**.hpp", "**.cpp" }
+    project "IntricateEditor"
+        kind "ConsoleApp"
+        language "C++"
+        files { "**.hpp", "**.cpp" }
 
-    filter "configurations:Debug"
-        defines { "_IE_DEBUG" }
-        symbols "On"
+        filter "configurations:Debug"
+            defines { "_IE_DEBUG" }
+            symbols "On"
 
-    filter "configurations:Release"
-        defines { "_IE_RELEASE" }
-        optimize "On"
-```
+        filter "configurations:Release"
+            defines { "_IE_RELEASE" }
+            optimize "On"
+    ```
 
 ---
 
