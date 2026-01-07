@@ -101,7 +101,7 @@ while (true)
     DoWork();
 ```
 
-- `else`, `catch` and `finally` must always appear on its own line.
+- `else`, `catch`, `finally` and `case` must always appear on its own line.
 - Prefer ternary expressions over simple `if-else` blocks.
 
 ### Pointers and References
