@@ -30,6 +30,7 @@ Intricate only runs on **Windows 10 and 11**.
 - **Vulkan SDK 1.3.216**
 - **DirectX 11 & 12**
 
-See [ide-requirements](ide-requirements.md) for more requirements.
+!!! note "IDE requirements"
+    See [IDE requirements](ide-requirements.md) for more details.
 
 ---
