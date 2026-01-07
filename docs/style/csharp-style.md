@@ -2,8 +2,9 @@
 
 This section defines stylistic, structural, and formatting standards for C# source code.
 
-> **Note**: Naming conventions are not covered in this section.  
-> See: [Naming Conventions](naming-conventions.md).
+!!! info "Naming Conventions"
+    Naming conventions are not covered in this section.  
+    See [Naming Conventions](naming-conventions.md).
 
 ---
 
@@ -11,15 +12,17 @@ This section defines stylistic, structural, and formatting standards for C# sour
 
 Intricate uses [.editorconfig](https://editorconfig.org/) to enforce code-styling. In **Visual Studio**, the code formatter can be run by pressing the hotkey chord `Ctrl+K, Ctrl+D` on an open file.
 
-> All formatting rules denoted by a `*` are automatically applied by **.editorconfig** or **Visual Studio**.
+!!! info
+    All formatting rules denoted by a `*` are automatically applied by **.editorconfig** or **Visual Studio**.
 
 ### Indentation
 
-- \*Use **4 spaces** per indentation level.
+- Use **4 spaces** per indentation level.\*
 - Do not use tab characters.
-- \*Continuation lines should be indented once with respect to the current indentation level.
+- Continuation lines should be indented once with respect to the current indentation level.\*
 
-> **Note:** Pressing the tab key will add **4 spaces** instead of a tab character for indentation.
+!!! tip
+    Pressing the tab key will add **4 spaces** instead of a tab character for indentation when **.editorconfig** is enabled.
 
 ### Line Length
 
@@ -33,20 +36,21 @@ Intricate uses [.editorconfig](https://editorconfig.org/) to enforce code-stylin
     - Method definitions
     - Class members grouped by purpose
     - Logical blocks of code grouped by purpose
-- \*Do not leave trailing whitespace.
-- \*Use **exactly one space** after commas and semicolons inside parameter lists and other constructs.
-- \*Use **exactly one space** before and after binary operators.
+- Do not leave trailing whitespace.\*
+- Use **exactly one space** after commas and semicolons inside parameter lists and other constructs.\*
+- Use **exactly one space** before and after binary operators.\*
   - Example: `a + b`, `x == 3`, `value * 2`
   - **No spaces** for:
     - Indexing: `arr[i]`
     - Unary operators: `-x`, `!flag`, `~mask`, `++i`, `i--`
-- \*Insert a **final newline** at the end of source files.
+- Insert a **final newline** at the end of source files.\*
 
-> **Note**: More than one blank line should never be used anywhere other than in-between the `using` directives and the namespace declaration.
+!!! warning
+    More than one blank line should **never** be used anywhere other than in-between the `using` directives and the namespace declaration.
 
 ### Braces
 
-- \*Use the **Allman style**:
+- Use the **Allman style**\*:
 ``` C#
 public void Foo()
 {
@@ -75,6 +79,21 @@ if (printNumbers)
 ``` C#
 public void Foo() { } // Inlined empty braces with a space in-between
 ```
+
+### Control Flow Blocks
+
+- Do not inline control-flow blocks:
+``` C#
+// Don't do this
+while (true) DoWork();
+
+// Do this instead
+while (true)
+    DoWork();
+```
+
+- `else`, `catch`, `finally` and `case` must always appear on its own line.
+- Prefer ternary expressions over simple `if-else` blocks.
 
 ---
 
@@ -125,10 +144,12 @@ public void Foo() { } // Inlined empty braces with a space in-between
 ### Documentation
 
 Use XML documentation comments for:
+
 - Public types
 - Public and protected members
 
-> **Note**: We may switch to Doxygen comments soon.
+!!! note
+    We may switch to Doxygen comments soon.
 
 ### Commenting Style
 
@@ -223,9 +244,10 @@ public void CopyToNative(ReadOnlySpan<byte> data, nint dst)
 
 ## Source Control Expectations
 
-- Changes must adhere to this style guide **merge**.
+- Changes must adhere to this style guide.
 - Automated formatting tools should be run prior to commit.
 
-> **Note**: In-future we may implement CI linting and formatting.
+!!! note
+    In-future we may implement CI linting and formatting.
 
 ---
