@@ -40,7 +40,71 @@ Example:
 | **DEPRECATED** | as-of-date(dd/mm/yyyy) | Mark an API or function as deprecated. | `// DEPRECATED(19/06/2025): Replaced this function with Foo()` |
 | **WTF** | - | Identify confusing or unexpected behavior requiring investigation. *(Use sparingly.)* | `// WTF: Behavior differs between debug and release builds` |
 
----
+---  
+  
+## Doxygen Guidelines  
+
+### Where to use?
+
+- At the header of every file, explaining:
+	- Filename
+	- Brief description
+	- Author
+	- Date of Creation
+- Above every method:
+	- Describing the purpose briefly, in one line
+	- Then you can describe the method in more detail. (What algorithms were used, unique decisions made, any wildcards.)
+	- Describe the parameter(s) and result.
+
+###  Comment style & Format (How to write?)
+
+**Core:**
+- Present tense
+    |  |  |
+    |--|--|
+    | ❌ Bad | `x does this thing to y. ` |
+    | ✅ Good| `Sorts through array `|
+- Active voice: *Subject + Verb + Object*
+    |  |  |
+    |--|--|
+    | ❌ Bad | `The integer was modified by the function. ` |
+    | ✅ Good| `The function modifies the integer.`|
+- Write in Third Person instead of First person: 
+	- ❌ No: I, me, we
+		- `# I retrieve the label's text via calling the method`
+	- ✅ Rather use third person
+		- `# The label is retrieved via the method's call.`
+
+
+**File headers:**
+
+    /**
+     * @file    filename.cpp
+     * @brief   Brief description of file purpose
+     * @author  John Doe (optional)
+     * @date    2024-01-15
+     * 
+     * Detailed description of file contents, context, and usage...
+     * Can span multiple lines...
+     * 
+     * @NOTE: ...    Important notes about this file
+     * @WARNING: ... Any warnings for developers
+     */
+
+**Method template:**
+
+    /**
+     * @brief   One-line description of function purpose
+     * 
+     * Detailed description including algorithm, edge cases,
+     * performance characteristics, etc.
+     * 
+     * @param   param1 Description of first parameter
+     * @param   param2 Description of second parameter
+     * @return  Description of return value
+     * /
+
+---  
 
 ## Discouraged Comment Styles
 
