@@ -1,0 +1,35 @@
+# markdownlint configuration
+# See: https://github.com/DavidAnson/markdownlint/blob/main/schema/.markdownlint.yaml
+
+# Default state for all rules
+default: true
+
+# Ignore all files/folders ignored by git
+gitignore: true
+
+# Use dashes for list items
+MD004:
+  style: dash
+
+# Disable line length rules
+MD013: false
+
+# Allow inline HTML
+MD033: false
+
+# Allow multiple headings with the same content
+MD024:
+  siblings_only: true
+
+# Allow preamble text before the primary heading
+MD041:
+  allow_preamble: true
+
+# Natural list ordering
+MD029: false
+
+# Allow headings to end with punctuation
+MD026: false
+
+# Allow different block styles per file
+MD046: false
