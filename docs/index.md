@@ -1,4 +1,4 @@
-# Homepage 
+# Homepage
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
@@ -12,7 +12,7 @@ Some `code` goes here.
 
 A plain codeblock:
 
-```
+``` py
 Some code here
 def myfunction()
 // some comment
@@ -59,7 +59,7 @@ def bubble_sort(items):
 
 ## Icons and Emojs
 
-:smile: 
+:smile:
 
 :fontawesome-regular-face-laugh-wink:
 

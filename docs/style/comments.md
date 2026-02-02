@@ -6,7 +6,7 @@ This section outlines the conventions used for writing comments in code.
 
 ## Comment Structure
 
-**General format of a comment:** 
+**General format of a comment:**
 
 ``` C++
 // <COMMENT_TAG>([optional metadata]): <short imperative summary>

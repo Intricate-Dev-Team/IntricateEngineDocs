@@ -5,6 +5,7 @@ This section specifies the *Integrated Development Environment* (IDE) requiremen
 ---
 
 ## IDE
+
 Intricate development requires **Microsoft Visual Studio 2022 or newer**. A secondary text editor may also be used with **Visual Studio**, but should **not replace it**. Suggested secondary text editors are:
 
 - VS Code

@@ -39,11 +39,11 @@ Intricate uses [.editorconfig](https://editorconfig.org/) to enforce code-stylin
 - Do not leave trailing whitespace.\*
 - Use **exactly one space** after commas and semicolons inside parameter lists and other constructs.\*
 - Use **exactly one space** before and after binary operators.\*
-  - Example: `a + b`, `x == 3`, `value * 2`
-  - **No spaces** for:
-    - Indexing: `arr[i]`
-    - Unary operators: `-x`, `!flag`, `~mask`, `++i`, `i--`
-    - Scope resolution: `std::string`
+    - Example: `a + b`, `x == 3`, `value * 2`
+    - **No spaces** for:
+      - Indexing: `arr[i]`
+      - Unary operators: `-x`, `!flag`, `~mask`, `++i`, `i--`
+      - Scope resolution: `std::string`
 - Insert a **final newline** at the end of source files.\*
 
 !!! warning
@@ -52,17 +52,19 @@ Intricate uses [.editorconfig](https://editorconfig.org/) to enforce code-stylin
 ### Braces
 
 - Use the **Allman style**\*:
+
 ``` C++
 void Foo()
 {
     if (true)
     {
-        // Block-bodies covering multiple lines must always have the opening brace on a newline.
+      // Block-bodies covering multiple lines must always have the opening brace on a newline.
     }
 }
 ```
 
 - Omit the braces for single-line control-flow blocks:
+
 ``` C++
 if (true)
     Foo();
@@ -77,21 +79,24 @@ if (printNumbers)
 ```
 
 - Empty function bodies should be defined as:
+
 ``` C++
 void Foo() { }; // Inlined empty braces with a space in-between ended with a semicolon
 ```
 
 - Multi-line lambda function bodies should have their braces indented\*:
+
 ``` C++
 Helpers::FetchExecuteIfValid<Scene>(nativeID, [&](const Ref<Scene>& scene)
-    {
-        scene->DestroyEntity(entityID);
-    });
+{
+    scene->DestroyEntity(entityID);
+});
 ```
 
 ### Control Flow Blocks
 
 - Do not inline control-flow blocks:
+
 ``` C++
 // Don't do this
 while (true) DoWork();
@@ -107,6 +112,7 @@ while (true)
 ### Pointers and References
 
 - Place `*` and `&` adjacent to the type\*:
+
 ``` C++
 int* ptr;
 const Foo& ref;
@@ -117,6 +123,7 @@ const Foo& ref;
 ### Preprocessor Directives
 
 - Preprocessor directives should be indented and follow an independent indentation level:
+
 ``` C++
 #ifdef _IE_ENABLE_LOGGING
 #   define _IE_NATIVE_USE_TYPE_TRACKING
