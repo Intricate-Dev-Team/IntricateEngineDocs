@@ -17,8 +17,6 @@ curly_bracket_next_line = true
 # Preserve whitespace for Markdown & use two-space indentation
 [*.md]
 trim_trailing_whitespace = false
-indent_size = 2
-tab_width = 2
 
 # YAML indentation
 [*.yaml]
