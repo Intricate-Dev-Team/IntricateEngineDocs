@@ -11,6 +11,10 @@ gitignore: true
 MD004:
   style: dash
 
+# Unordered list indentation
+MD007:
+  indent: 4
+
 # Disable line length rules
 MD013: false
 
