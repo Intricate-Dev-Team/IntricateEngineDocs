@@ -70,7 +70,7 @@ Boolean function and variable names should indicate a condition or state.
 
 ## Function/Method Naming
 
-- Functions should be **action-oriented** and effectively describe their behavior using *verbs* - even if it means that the function name may become longer. 
+- Functions should be **action-oriented** and effectively describe their behavior using *verbs* - even if it means that the function name may become longer.
 - Avoid unreadable abbreviations!
 
 | Action Category       | Prefix Examples        | Function Examples                 |
@@ -129,7 +129,7 @@ Boolean function and variable names should indicate a condition or state.
 
 ## File Naming Rules
 
-- File names should reflect the primary type or purpose. 
+- File names should reflect the primary type or purpose.
 - Use one main class or responsibility per file where practical.
 
 !!! example
@@ -139,11 +139,11 @@ Boolean function and variable names should indicate a condition or state.
 
 ## Folder Naming Rules
 
-- Folders are created for every major or minor subsystem that requires the implementation of multiple source files. 
+- Folders are created for every major or minor subsystem that requires the implementation of multiple source files.
 
 !!! example
     There are many source files part of the `Math` library, therefore these files are deserving of their own folder: `IntricateEngine/Math/`
 
-- Folders should always be named in **PascalCase** except in instances where a certain directory tree is required to follow a different convention for a particular toolchain; such as using **kebab-case** folder names for web-based toolchains. 
+- Folders should always be named in **PascalCase** except in instances where a certain directory tree is required to follow a different convention for a particular toolchain; such as using **kebab-case** folder names for web-based toolchains.
 
 ---

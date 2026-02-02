@@ -166,6 +166,7 @@ See: [Comments](comments.md).
 ### Modifier Order
 
 Field modifiers should appear in the following order:
+
 ``` C#
 // This ordering is enforced by .editorconfig and can be auto-applied from Visual Studio hints
 public, private, protected, internal, static, extern, new, virtual, abstract, sealed, partial, override, readonly, unsafe, volatile, async
