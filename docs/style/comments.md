@@ -92,7 +92,7 @@ Example:
 
 ### TEMPLATES 
 
-**File headers:**
+**File headers [C++ only]:**
 
 
     /**
@@ -109,33 +109,65 @@ Example:
      */
 
 **Method Documentation:**
+- C++:
 
-    /**
-     * @brief   One-line description of function purpose
-     * 
-     * Detailed description including algorithm, edge cases,
-     * performance characteristics, etc.
-     * 
-     * @param   param1 Description of first parameter
-     * @param   param2 Description of second parameter
-     * @return  Description of return value
-     * /
+        /**
+        * @brief   One-line description of function purpose
+        * 
+        * Detailed description including algorithm, edge cases,
+        * performance characteristics, etc.
+        * 
+        * @param   param1 Description of first parameter
+        * @param   param2 Description of second parameter
+        * @return  Description of return value
+        * /
+
+- C#:
+
+        /// <summary>
+        /// Calculates the sum of two integers.
+        /// </summary>
+        /// <param name="left">The first integer operand.</param>
+        /// <param name="right">The second integer operand.</param>
+        /// <returns>The sum of the two integers.</returns>
+        public static int Add(int left, int right)
+        {
+            return left + right;
+        }
 
 **Class Documentation:**
 
-    /**
-    * @class   ClassName
-    * @brief   Brief description of class purpose
-    * 
-    * Detailed explanation of class responsibilities, usage patterns,
-    * and important design decisions.
-    * 
-    * @param  Description of template parameter requirements
-    */
-    template<typename T>
-    class ClassName {
-        // Class implementation
-    };
+- C++
+
+        /**
+        * @class   ClassName
+        * @brief   Brief description of class purpose
+        * 
+        * Detailed explanation of class responsibilities, usage patterns,
+        * and important design decisions.
+        * 
+        * @param  Description of template parameter requirements
+        */
+        public class ClassName<T>
+        {
+            // Class implementation
+        }
+
+- C#:
+
+        /// <summary>
+        /// A summary about this class.
+        /// </summary>
+        /// <remarks>
+        /// These remarks would explain more about this class.
+        /// In this example, these comments also explain the
+        /// general information about the derived class.
+        /// </remarks>
+        public class MainClass
+        {
+        }
+
+- For more examples, look here: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/examples
 
 ---  
 
