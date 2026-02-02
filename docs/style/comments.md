@@ -44,39 +44,56 @@ Example:
   
 ## Doxygen Guidelines  
 
-### Where to use?
+### 📍 Where to use?
 
-- At the header of every file, explaining:
+- At the **header** of every file, explaining:
 	- Filename
-	- Brief description
-	- Author
+	- Brief description of file's purpose and contents.
+	- Author(s)
 	- Date of Creation
-- Above every method:
-	- Describing the purpose briefly, in one line
-	- Then you can describe the method in more detail. (What algorithms were used, unique decisions made, any wildcards.)
-	- Describe the parameter(s) and result.
+- **Above** every **Method**, describing:
+	- The purpose briefly, in one line
+	- The method in more detail. (What algorithms were used, unique decisions made.)
+	- The parameter(s) and result.
+- **Class/Struct** documenation:
+    - Brief class description
+    - Detailed usage information.
+    - Template parameters.
+    - Important Member relationships
 
-###  Comment style & Format (How to write?)
+###  :writing_hand: Writing Style guidelines
 
-**Core:**
+**Grammar & Tone:**
 - Present tense
     |  |  |
     |--|--|
-    | ❌ Bad | `x does this thing to y. ` |
-    | ✅ Good| `Sorts through array `|
+    | ❌ Bad | `The function will sort the array ` |
+    | ✅ Good| `Sorts the array using quicksort. `|
+
 - Active voice: *Subject + Verb + Object*
     |  |  |
     |--|--|
-    | ❌ Bad | `The integer was modified by the function. ` |
+    | ❌ Bad | `The integer is modified by the method. ` |
     | ✅ Good| `The function modifies the integer.`|
-- Write in Third Person instead of First person: 
-	- ❌ No: I, me, we
-		- `# I retrieve the label's text via calling the method`
-	- ✅ Rather use third person
-		- `# The label is retrieved via the method's call.`
 
+- Write in Third Person instead of First Person: 
+    
+    |  |  |
+    |--|--|
+    | ❌ No usage of: <em>I, me, we</em>. | `# I calculate the average here.` <br> `# We initialize the module` |
+    | ✅ Use Third person| `Calculates the average of the values.`<br>`Initializes the communication module.` |
+
+- Be direct and concise,
+- Start summaries with a verb:
+    |  |  |
+    |--|--|
+    | ❌ Bad | `This function is responsible for performing the task of data validation.` |
+    | ✅ Good| `Validates input data format.`|
+
+### TEMPLATES 
 
 **File headers:**
+
 
     /**
      * @file    filename.cpp
@@ -91,7 +108,7 @@ Example:
      * @WARNING: ... Any warnings for developers
      */
 
-**Method template:**
+**Method Documentation:**
 
     /**
      * @brief   One-line description of function purpose
@@ -103,6 +120,22 @@ Example:
      * @param   param2 Description of second parameter
      * @return  Description of return value
      * /
+
+**Class Documentation:**
+
+    /**
+    * @class   ClassName
+    * @brief   Brief description of class purpose
+    * 
+    * Detailed explanation of class responsibilities, usage patterns,
+    * and important design decisions.
+    * 
+    * @param  Description of template parameter requirements
+    */
+    template<typename T>
+    class ClassName {
+        // Class implementation
+    };
 
 ---  
 
