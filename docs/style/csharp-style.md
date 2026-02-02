@@ -39,10 +39,10 @@ Intricate uses [.editorconfig](https://editorconfig.org/) to enforce code-stylin
 - Do not leave trailing whitespace.\*
 - Use **exactly one space** after commas and semicolons inside parameter lists and other constructs.\*
 - Use **exactly one space** before and after binary operators.\*
-  - Example: `a + b`, `x == 3`, `value * 2`
-  - **No spaces** for:
-    - Indexing: `arr[i]`
-    - Unary operators: `-x`, `!flag`, `~mask`, `++i`, `i--`
+    - Example: `a + b`, `x == 3`, `value * 2`
+    - **No spaces** for:
+        - Indexing: `arr[i]`
+        - Unary operators: `-x`, `!flag`, `~mask`, `++i`, `i--`
 - Insert a **final newline** at the end of source files.\*
 
 !!! warning

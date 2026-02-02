@@ -41,9 +41,9 @@ Intricate uses [.editorconfig](https://editorconfig.org/) to enforce code-stylin
 - Use **exactly one space** before and after binary operators.\*
     - Example: `a + b`, `x == 3`, `value * 2`
     - **No spaces** for:
-      - Indexing: `arr[i]`
-      - Unary operators: `-x`, `!flag`, `~mask`, `++i`, `i--`
-      - Scope resolution: `std::string`
+        - Indexing: `arr[i]`
+        - Unary operators: `-x`, `!flag`, `~mask`, `++i`, `i--`
+        - Scope resolution: `std::string`
 - Insert a **final newline** at the end of source files.\*
 
 !!! warning

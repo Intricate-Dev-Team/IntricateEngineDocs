@@ -22,6 +22,7 @@ This section outlines the conventions used for writing comments in code.
 When including metadata, list multiple elements as **comma-separated values** without spaces.
 
 Example:
+
 ``` C++
 // FIXME(Adam,medium): These allocations are leaking memory and need to be fixed!
 ```
