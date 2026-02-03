@@ -39,10 +39,10 @@ Intricate uses [.editorconfig](https://editorconfig.org/) to enforce code-stylin
 - Do not leave trailing whitespace.\*
 - Use **exactly one space** after commas and semicolons inside parameter lists and other constructs.\*
 - Use **exactly one space** before and after binary operators.\*
-  - Example: `a + b`, `x == 3`, `value * 2`
-  - **No spaces** for:
-    - Indexing: `arr[i]`
-    - Unary operators: `-x`, `!flag`, `~mask`, `++i`, `i--`
+    - Example: `a + b`, `x == 3`, `value * 2`
+    - **No spaces** for:
+        - Indexing: `arr[i]`
+        - Unary operators: `-x`, `!flag`, `~mask`, `++i`, `i--`
 - Insert a **final newline** at the end of source files.\*
 
 !!! warning
@@ -51,6 +51,7 @@ Intricate uses [.editorconfig](https://editorconfig.org/) to enforce code-stylin
 ### Braces
 
 - Use the **Allman style**\*:
+
 ``` C#
 public void Foo()
 {
@@ -62,6 +63,7 @@ public void Foo()
 ```
 
 - Omit the braces for single-line control-flow blocks:
+
 ``` C#
 if (true)
     Foo();
@@ -76,6 +78,7 @@ if (printNumbers)
 ```
 
 - Empty function bodies should be defined as:
+
 ``` C#
 public void Foo() { } // Inlined empty braces with a space in-between
 ```
@@ -83,6 +86,7 @@ public void Foo() { } // Inlined empty braces with a space in-between
 ### Control Flow Blocks
 
 - Do not inline control-flow blocks:
+
 ``` C#
 // Don't do this
 while (true) DoWork();
@@ -162,6 +166,7 @@ See: [Comments](comments.md).
 ### Modifier Order
 
 Field modifiers should appear in the following order:
+
 ``` C#
 // This ordering is enforced by .editorconfig and can be auto-applied from Visual Studio hints
 public, private, protected, internal, static, extern, new, virtual, abstract, sealed, partial, override, readonly, unsafe, volatile, async
@@ -170,6 +175,7 @@ public, private, protected, internal, static, extern, new, virtual, abstract, se
 ### Expression Syntax
 
 - Use expression-bodied members for trivial property getters and simple inline methods:
+
 ``` C#
 public int Count => m_Count;
 
@@ -180,6 +186,7 @@ public float Mass
 }
 
 public bool Awake() => Bindings.RigidBody_Awake(m_NativeID);
+
 ```
 
 - Use block-bodies for everything else.
@@ -187,6 +194,7 @@ public bool Awake() => Bindings.RigidBody_Awake(m_NativeID);
 ### Pattern Matching
 
 - Favor pattern matching over explicit type casting when checking types.
+
 ``` C#
 public class Entity 
 { 
@@ -223,6 +231,7 @@ public class Entity
 
 - Minimize the `unsafe` scope as far as possible.
 - Avoid declaring methods and types as `unsafe`.
+
 ``` C#
 // Avoid declaring the method as unsafe
 public void CopyToNative(ReadOnlySpan<byte> data, nint dst)

@@ -27,7 +27,7 @@ This section outlines the core principles guiding how we design, implement, and 
     Use assertions, debug-only checks and logging generously where appropriate.
 
 !!! success "Prioritize runtime performance"
-    Every design choice should consider its impact on real-time execution.   
+    Every design choice should consider its impact on real-time execution.  
     Performance is not an afterthought — it's a primary goal, especially in hot code-paths.
 
 !!! success "Optimize, optimize, optimize"

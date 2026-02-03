@@ -6,7 +6,7 @@ This section outlines the conventions used for writing comments in code.
 
 ## Comment Structure
 
-**General format of a comment:** 
+**General format of a comment:**
 
 ``` C++
 // <COMMENT_TAG>([optional metadata]): <short imperative summary>
@@ -22,6 +22,7 @@ This section outlines the conventions used for writing comments in code.
 When including metadata, list multiple elements as **comma-separated values** without spaces.
 
 Example:
+
 ``` C++
 // FIXME(Adam,medium): These allocations are leaking memory and need to be fixed!
 ```
