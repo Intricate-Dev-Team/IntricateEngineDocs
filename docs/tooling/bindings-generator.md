@@ -49,7 +49,7 @@ As we can see from the above example, the **unmangled** symbol is much easier to
 [LibraryImport(LibIntricateEngine, EntryPoint = "RenderCommand_GetAPI")]
 ```
 
-Using **unmangled** symbols do however present us with a problem: all exported symbols must now be **unique**. This means no two functions can have the same name - including overloaded functions. This is the reason why we write **binding function names** in the format: `TypeName_FunctionName` - this ensures the uniqueness of the symbol. 
+Using **unmangled** symbols do however present us with a problem: all exported symbols must now be **unique**. This means no two functions can have the same name - including overloaded functions. This is the reason why we write **binding function names** in the format: `TypeName_FunctionName` - this ensures the uniqueness of the symbol.
 
 ### But how do we handle overloads?
 
@@ -86,7 +86,7 @@ This agreement covers, among other things:
 - Which registers are used for parameters and return values
 - Stack usage and stack-frame layout
 
-And as such, all interop binding functions we write must also adhere to ABI requirements - otherwise everything turns into **undefined behaviour**. 
+And as such, all interop binding functions we write must also adhere to ABI requirements - otherwise everything turns into **undefined behaviour**.
 
 !!! note
     In Intricate, on the `x86_64` platform, the **Microsoft x64 ABI** is used.
@@ -184,7 +184,6 @@ The Bindings Generator emits a fixed set of native and managed function shapes d
 
 !!! warning
     It is of **critical importance** that the `FuncSigType` used for a particular binding pair is correct, otherwise compile-time errors and or crashes and undefined behaviour may occur.
-
 
 !!! note
     `...` represents a placeholder for zero or more ABI-safe parameters.  
@@ -416,7 +415,7 @@ _IE_BINDING_QUALIFIER uint32 ComponentName_GetFieldName(NativeID sceneID, uint32
 }
 ```
 
-!!! note 
+!!! note
     The `FieldName` must be the same as the `TypeName` here.
 
 #### EcsGetField
