@@ -142,3 +142,42 @@ Non-PODs must be returned as **out pointers**.
 
 ## The Bindings Generator
 
+The **Bindings Generator** is a code generator that automatically generates `C++ -> C#` **interop binding pairs** during build-time. It is written in `C#` and is integrated into **Premake** such that it runs before `IntricateEngine` & `IntricateEngine.NET` are compiled during builds. This ensures that the **interop bindings** are always up-to-date.
+
+The Bindings Generator uses a series of **Interface Definition Language (IDL)** files written in **JSONC** as input. The IDL schema used is as follows:
+
+``` jsonc
+{
+    "Metadata": {
+        "Type": "TypeName",
+        "Headers": [
+            "IntricateEngine/Header1.hpp",
+            "IntricateEngine/Header2.hpp"
+        ],
+        "Source": "IntricateEngine/SourceFile.cpp"
+    },
+    "Functions": {
+        "TypeName_FuncName": {
+            "FuncSigType": "FetchExecute",
+            "Params": "(void* param, NativeID objID)",
+            "ParamsT": [
+                {
+                    "Type": "void*",
+                    "Name": "param"
+                },
+                {
+                    "Type": "NativeID",
+                    "NativeType": "NativeObjectType", // OPTIONAL: NativeType only needs to be defined if Type = "NativeID"
+                    "Name": "objID"
+                }
+            ],
+            "Return": "void"
+        },
+        // Rest of the binding functions...
+    }
+}
+```
+
+### Function Signature Types
+
+---
