@@ -47,19 +47,19 @@ Example:
 ### 📍 Where to use?
 
 - At the **header** of every file, explaining:
-  - Filename
-  - Brief description of file's purpose and contents.
-  - Author(s)
-  - Date of Creation
+    - Filename
+    - Brief description of file's purpose and contents.
+    - Author(s)
+    - Date of Creation
 - **Above** every **Method**, describing:
-  - The purpose briefly, in one line
-  - The method in more detail. (What algorithms were used, unique decisions made.)
-  - The parameter(s) and result.
+    - The purpose briefly, in one line
+    - The method in more detail. (What algorithms were used, unique decisions made.)
+    - The parameter(s) and result.
 - **Class/Struct** documenation:
-  - Brief class description
-  - Detailed usage information.
-  - Template parameters.
-  - Important Member relationships
+    - Brief class description
+    - Detailed usage information.
+    - Template parameters.
+    - Important Member relationships
 
 ### :writing_hand: Writing Style guidelines
 
@@ -80,7 +80,7 @@ Example:
     | ✅ Good| `The function modifies the integer.`|
 
 - Write in Third Person instead of First Person:
-    
+
     |  |  |
     |--|--|
     | ❌ No usage of: <em>I, me, we</em>. | `# I calculate the average here.` <br> `# We initialize the module`|
@@ -98,7 +98,6 @@ Example:
 ### TEMPLATES
 
 **File headers [C++ only]:**
-
 
     /**
      * @file    filename.cpp
