@@ -40,57 +40,62 @@ Example:
 | **DEPRECATED** | as-of-date(dd/mm/yyyy) | Mark an API or function as deprecated. | `// DEPRECATED(19/06/2025): Replaced this function with Foo()` |
 | **WTF** | - | Identify confusing or unexpected behavior requiring investigation. *(Use sparingly.)* | `// WTF: Behavior differs between debug and release builds` |
 
----  
+---
   
 ## Doxygen Guidelines  
 
 ### 📍 Where to use?
 
 - At the **header** of every file, explaining:
-	- Filename
-	- Brief description of file's purpose and contents.
-	- Author(s)
-	- Date of Creation
+  - Filename
+  - Brief description of file's purpose and contents.
+  - Author(s)
+  - Date of Creation
 - **Above** every **Method**, describing:
-	- The purpose briefly, in one line
-	- The method in more detail. (What algorithms were used, unique decisions made.)
-	- The parameter(s) and result.
+  - The purpose briefly, in one line
+  - The method in more detail. (What algorithms were used, unique decisions made.)
+  - The parameter(s) and result.
 - **Class/Struct** documenation:
-    - Brief class description
-    - Detailed usage information.
-    - Template parameters.
-    - Important Member relationships
+  - Brief class description
+  - Detailed usage information.
+  - Template parameters.
+  - Important Member relationships
 
-###  :writing_hand: Writing Style guidelines
+### :writing_hand: Writing Style guidelines
 
 **Grammar & Tone:**
+
 - Present tense
-    |  |  |
-    |--|--|
-    | ❌ Bad | `The function will sort the array ` |
-    | ✅ Good| `Sorts the array using quicksort. `|
+
+  |  |  |
+  |--|--|
+  | ❌ Bad | `The function will sort the array.`|
+  | ✅ Good| `Sorts the array using quicksort.`|
 
 - Active voice: *Subject + Verb + Object*
+
     |  |  |
     |--|--|
-    | ❌ Bad | `The integer is modified by the method. ` |
+    | ❌ Bad | `The integer is modified by the method.`|
     | ✅ Good| `The function modifies the integer.`|
 
-- Write in Third Person instead of First Person: 
+- Write in Third Person instead of First Person:
     
     |  |  |
     |--|--|
-    | ❌ No usage of: <em>I, me, we</em>. | `# I calculate the average here.` <br> `# We initialize the module` |
-    | ✅ Use Third person| `Calculates the average of the values.`<br>`Initializes the communication module.` |
+    | ❌ No usage of: <em>I, me, we</em>. | `# I calculate the average here.` <br> `# We initialize the module`|
+    | ✅ Use Third person| `Calculates the average of the values.`<br>`Initializes the communication module.`|
 
 - Be direct and concise,
+
 - Start summaries with a verb:
+
     |  |  |
     |--|--|
     | ❌ Bad | `This function is responsible for performing the task of data validation.` |
     | ✅ Good| `Validates input data format.`|
 
-### TEMPLATES 
+### TEMPLATES
 
 **File headers [C++ only]:**
 
@@ -109,6 +114,7 @@ Example:
      */
 
 **Method Documentation:**
+
 - C++:
 
         /**
@@ -167,9 +173,9 @@ Example:
         {
         }
 
-- For more examples, look here: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/examples
+- For more examples, look here: <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/examples>
 
----  
+---
 
 ## Discouraged Comment Styles
 
