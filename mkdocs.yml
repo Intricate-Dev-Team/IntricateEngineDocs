@@ -80,6 +80,7 @@ nav:
     - Naming Conventions: style/naming-conventions.md
   - Tooling:
     - Overview: tooling/index.md
+    - Bindings Generator: tooling/bindings-generator.md
 
 copyright: |
   &copy; 2026-present <a href="https://github.com/Intricate-Dev-Team" target="_blank" rel="noopener">Intricate Dev Team</a>
