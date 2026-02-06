@@ -1,0 +1,30 @@
+###############################################################################
+# Normalize line endings using LF.
+###############################################################################
+* text eol=lf
+
+###############################################################################
+# Behavior for binary files.
+###############################################################################
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.bmp   binary
+*.gif   binary
+*.tga   binary
+*.psd   binary
+*.ico   binary
+*.zip   binary
+*.7z    binary
+*.rar   binary
+*.exe   binary
+*.dll   binary
+*.lib   binary
+*.a     binary
+*.so    binary
+*.ttf   binary
+*.otf   binary
+*.woff  binary
+*.woff2 binary
+*.mp3   binary
+*.aac   binary
